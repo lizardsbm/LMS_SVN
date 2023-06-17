@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1e25cbe300fb666429b238fa67c22ad7
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _wave: {fileID: 2800000, guid: 9a67eeb275837b64ead2bfa8e5f03a48, type: 3}
+  - _wave2: {fileID: 2800000, guid: 9a67eeb275837b64ead2bfa8e5f03a48, type: 3}
+  - _node_7749: {fileID: 2800000, guid: 7618c65f1c809f54cad819f191c12827, type: 3}
+  - _backMask: {fileID: 2800000, guid: 7a9a733a3d5a59847b929b24949c0d70, type: 3}
+  - _distort: {fileID: 2800000, guid: 8060f12be6af7994db7ddba6bd3a3219, type: 3}
+  - _distort2: {fileID: 2800000, guid: 8060f12be6af7994db7ddba6bd3a3219, type: 3}
+  - _bottomwave: {fileID: 2800000, guid: 9a67eeb275837b64ead2bfa8e5f03a48, type: 3}
+  - _bottomwave2: {fileID: 2800000, guid: 9a67eeb275837b64ead2bfa8e5f03a48, type: 3}
+  - _node_4364: {fileID: 2800000, guid: 9a30da4b1458e7f4ba61808748e66a53, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

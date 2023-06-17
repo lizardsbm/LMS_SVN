@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "169334175499",
+    "firebase_url": "https://api-project-53251866.firebaseio.com",
+    "project_id": "api-project-53251866",
+    "storage_bucket": "api-project-53251866.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169334175499:android:ddbc14695a20410f0a140e",
+        "android_client_info": {
+          "package_name": "com.ants.lastmousestanding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169334175499-e39smq1pheaihh4i7b990fp6ndprufso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU42BeV7ibUn8Bx2G8qZrJU_Bp35k_k4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169334175499-e39smq1pheaihh4i7b990fp6ndprufso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

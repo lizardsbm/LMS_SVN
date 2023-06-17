@@ -1,0 +1,714 @@
+﻿scenario$scriptIdx$order$Text$Event$Index
+1$1$1$미끄러워서 올라가기 힘든 나무다.$-$0
+1$2$1$맛도 좋고 몸에도 좋은 도토리가 있다. \n 따서 선물하면 좋아할 것 같다.$-$0
+1$3$1$단단한 돌을 주웠다.$Get_InventoryItem&Disable_Ingame_Item&AppearGetItem&DisappearGetItem$1&3&1&1
+1$4$1$가벼운 덩굴을 얻었다.$Get_InventoryItem&Disable_Ingame_Item&Add_Condition&AppearGetItem&DisappearGetItem$2&4&9&2&2
+1$5$1$보금자리가 되어주는 숲이다.$-$0
+1$6$1$푸릇푸릇한 덤불이 자라나 있다.$-$0
+1$7$1$깨끗한 강물이 흐르고 있다.$-$0
+1$1000$1$이제 나뭇가지에 걸칠 수 있을 것 같다. $Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$1&2&3&4
+1$8$1$돌로 명중시키기가 어렵다.$-$0
+1$9$1$덩굴이 가벼워서 거기까지 닿지 않는다.$-$0
+1$10$1$덩굴에 묶인 돌을 나뭇가지에 걸치는 데 성공했다.$Enable_Ingame_Item&Add_Condition&Remove_InventoryItem&Disable_Ingame_Item&Change_Ingame_ItemPos$100&8&3&1&2|-1.888|0.817
+1$11$1$나무에 덩굴이 걸쳐져 있다.$-$0
+1$12$1$나무에 올라가 도토리를 땄다.$End_Game$0
+1$13$1$분해를 할 수가 없음$-$0
+1$14$1$덩굴을 잘랐던 곳이다$-$0
+1$100$1$단단한 돌이다.$-$0
+1$101$1$가벼운 덩굴이다.$-$0
+1$102$1$이제 나뭇가지에 걸칠 수 있을 것 같다.$-$0
+1$103$1$잘린덩굴이다.$-$0
+1$2000$1$돌과 덩굴이 묶인걸 풀었다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem&Remove_Condition&Remove_Condition$3&1&2&3&4
+1$10000$1$앗, 저런 곳에 도토리가 있네.$Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage1_ingame_BGM&419
+1$10000$2$아바로가 도토리를 좋아하던데…$-$0
+1$10000$3$그래! 도토리를 선물해주자!$ResetScriptPanelPosition$0
+1$9997$1$다른 아이템을 사용해보자$-$0
+1$9998$1$조합이 실패한것같아요$-$0
+1$9999$1$분해를 실패한것 같아요$-$0
+2$1$1$안 쪽이 뭔가 반짝이는 진흙 덩어리를 주웠다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$1&1&1&1
+2$1$2$뭐지? 물에 한 번 씻어볼까?$-$0
+2$2$1$낡고 너덜너덜한 흰 천을 주웠다. 어디에 쓰는 걸까?$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$2&2&2&2
+2$3$1$예전에 도토리를 딸 때 썼던 덩굴로 묶은 돌을 얻었다.$Disable_Ingame_Item&Get_InventoryItem&Show_Get_Item&Change_Ingame_ItemPos&Add_Condition&AppearGetItem&DisappearGetItem$3&3&3&3|-0.55|-1.71&1&3&3
+2$4$1$무성한 덤불이다.\n 안 쪽에 뭔가가 있는데 줄기가 억세서 잘 끊어지지 않는다.$Add_Condition$2
+2$4$2$덤불을 끊을 물건을 찾아보자!$-$0
+2$5$1$깨끗했던 예전의 모습은 어디갔는지 냄새 나는 더러운 물이 흐르고 있다.$-$0
+2$6$1$아름다웠던 숲이 왜 이렇게 된 걸까?$-$0
+2$7$1$시커멓게 죽어가고 있는 나무다.$-$0
+2$1000$1$진흙 속에 들어있는 걸 꺼냈다.$Remove_InventoryItem&Get_InventoryItem&Add_Condition$1&100&4
+2$1001$1$묶여 있는 덩굴을 풀었다.$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem&Add_Condition$3&101&102&5
+2$1002$1$유리 조각을 천으로 감쌌다.$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$2&100&103&11
+2$8$1$유리조각이 미끄러워서 잘 자를 수가 없다.$Add_Condition$8
+2$1003$1$엉성한 유리칼을 덩굴로 단단히 묶었다.$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$101&103&104&15
+2$9$1$덤불을 끊어냈다.$-$0
+2$9$2$새로운 길이 나타났다! 그런데 안 쪽에 뭔가 있는데...$Disable_Ingame_Item&Enable_Ingame_Item&Add_Condition$4&100&16
+2$10$1$성공$End_Game$0
+2$12$1$엉성한유리칼을 사용했다$-$0
+2$12$2$잘 잘리지 않네 더 단단하게 묶을게 필요해$Remove_Condition&Add_Condition$14&13
+2$100$1$진흙이 잔뜩 묻은 진흙덩어리다$-$0
+2$101$1$조금 더럽고 축축한 흰천이다$-$0
+2$102$1$예전에 도토리를 딸 때 썼던 돌과덩굴이다$-$0
+2$103$1$날카로운 유리조각이다$-$0
+2$104$1$덩굴이다$-$0
+2$105$1$돌이다.$-$0
+2$106$1$엉성한 유리칼이다$-$0
+2$107$1$튼튼한 유리칼이다$-$0
+2$108$1$유리조각을 존에 쥐는건 위험해!$-$0
+2$1004$1$덩굴과 돌을 다시 묶었다$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Remove_Condition$101&102&3&5
+2$1005$1$엉성한 유리칼을 분해했다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem$103&100&2
+2$1006$1$튼튼한 유리칼을 분해했다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem$104&103&101
+2$15$1$쓰레기더미네 $-$0
+2$16$1$으악 이게 뭐야!$-$0
+2$16$1$뱀이잖아!? 도망치자$End_Game$0
+2$17$1$아까 덩굴을 얻은 나무이다.$-$0
+2$18$1$엉성한 유리칼로 자르기에는 너무 억세다 다른 방법을 찾아보자$-$0
+2$19$1$유리조각을 사용해서 자르기는 불가능하다 다른 방법을 찾아보자$-$0
+2$10000$1$숲이 왜 이렇게 된거지?$Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage2_ingame_BGM&419
+2$10000$2$분명 아름다운 숲이었는데…$-$0
+2$10000$3$내가 도토리를 땄던 덩굴이 그대로 있는걸 보면$-$0
+2$10000$4$확실히 예전 그 숲이 맞는데$-$0
+2$10000$5$숲을 한 번 조사해 볼까?$ResetScriptPanelPosition$0
+2$9997$1$다른 아이템을 사용해보자$-$0
+2$9998$1$조합이 실패한것같아요$-$0
+2$9999$1$분해를 실패한것 같아요$-$0
+3$1$1$뾰족뾰족한 밤이 잔뜩 열린 나무다.$-$0
+3$2$1$따끔따끔한 밤송이를 얻었다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$2&1&1&1
+3$2$2$이걸로 어쩌면 저 무서운 고양이를 해치울 수도…?$-$0
+3$2$3$하지만 어떻게…?$-$0
+3$3$1$떨어진 밧줄을 주웠다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$3&2&2&2
+3$3$2$밧줄을 어딘가에 걸어 고양이를 넘어트릴까? $-$0
+3$3$3$아니면 저 쥐에게 주어 저 쥐를 구출할까?$-$0
+3$4$1$기름이 가득 들어있는 병을 얻었다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$4&3&3&3
+3$4$2$무게가 좀 나가는데? 무게를 맞출때 유용할것같아$-$0
+3$4$3$아니면 어딘가에 사용해 미끄러지게 만들수도 있겠다!$-$0
+3$55$1$손잡이 달린 나무통을 얻었다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$5&4&4&4
+3$55$2$밧줄을을 이어 두레박으로 만들수 있을것같아!$-$0
+3$66$1$사과다 알이 잘차서 무게가 좀 나간다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$6&5&5&5
+3$66$2$사과를 하나하나 빼면서 적절하게 무게를 조절이 가능할것같아!$-$0
+3$5$1$손잡이 달린 나무통을 얻었다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$5&4&4&4
+3$5$2$딱 저 쥐가 탈만한 사이즈잖아$-$0
+3$5$3$하지만 어떻게 내려주지? 어딘가에 묶어야 할것같아$-$0
+3$6$1$사과다 알이 잘차서 무게가 좀 나간다.$Disable_Ingame_Item&Get_InventoryItem&Show_Get_Item$6&5&5
+3$6$2$이 사과들로 원하는 무게를 만들수 있을것같아!$-$0
+3$7$1$어떻게 하면 구해줄 수 있을까?$Add_Condition$5
+3$7$2$위에서 무언가를 내려줘볼까?$-$0
+3$8$1$바닥에 꼬챙이가 박혀있다.$-$0
+3$8$2$반대편 쇠고리에 줄같은것을 걸수 있을지도?$-$0
+3$9$1$바닥에 쇠고리가 묻혀져있다.$-$0
+3$9$2$반대편 꼬챙이에 줄같은것을 걸 수 있을지도?$-$0
+3$10$1$흙먼지가 날리는 바닥이다$-$0
+3$11$1$으 고양이다.$-$0
+3$11$2$고양이 몰래 시골쥐를 구하거나 고양이를 해치우자$-$0
+3$12$1$밤송이를 이용해 고양이를 해치울수 있을지도$-$0
+3$13$1$밧줄이다. 시골쥐에게 내려주거나 어딘가에 걸수 있을것같다.$-$0
+3$14$1$묵직한 무게의 기름병이다. 안에 미끌미끌한 기름이 찰랑거린다.$-$0
+3$15$1$손잡이가 달린 나무통이다. 손잡이는 어떤 물건과 조합이 가능할것같다.$-$0
+3$16$1$적절한 무게의 사과다. 여러 개를 넣으면 굉장히 무거워진다.$-$0
+3$17$1$두레박이다. 하지만 너무 가벼운데.$-$0
+3$18$1$기름병이 묶인 두레박이다. 균형이 잘 맞지 않는다.$-$0
+3$19$1$완벽한 균형의 두레박이다.$-$0
+3$20$1$물받이레일이다 물을 모아두는곳이다.$-$0
+3$21$1$누군가가 퇴원했나보군 누굴까?$-$0
+3$22$1$고양이쪽 박스$-$0
+3$23$1$사라져라 담쟁이$Disable_Ingame_Item$16
+3$24$1$선택받지 못한 사과들$-$0
+3$2000$1$서울쥐에게 밧줄을 줬지만 눈치채지못했다.$Add_Condition$7
+3$2000$2$밧줄에 무언가를 달아 눈치챌수있게 해볼까?$-$0
+3$2001$1$(지력)밧줄힌트$-$0
+3$1000$1$밧줄과 나무통을 이용해 두레박을 제작했다$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$2&4&51&8
+3$2002$1$시골쥐가 두레박을 눈치채고 타지만 힘이없어 끌어올리지못한다$Add_Condition$13
+3$2002$2$반대편에 무거운 물체를 묶어 끌어올려야 해!$-$0
+3$2003$1$(지력)두레박 힌트$-$0
+3$1001$1$기름병묶인 두레박을만들었다$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$3&51&52&14
+3$2004$1$기름병묶인 두레박을 사용함 $Add_Condition$19
+3$2004$2$하지만 기름병이 너무 무겁다$-$0
+3$2004$3$두레박 안에 적절하게 조절할수 있는 무게의 무언가를 넣어야 해!$-$0
+3$2005$1$(지력)기름두레박힌트$-$0
+3$1002$1$기름병묶인두레박에 사과추가 균형두레박만듬$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$5&52&53&20
+3$2006$1$균형 두레박에 서울쥐가 탔다.$Remove_InventoryItem$53
+3$2006$2$끙차! 끙차! 어서 올라와!$Disable_Ingame_Item&Enable_Ingame_Item$7&101
+3$2006$3$서울쥐가 탄 사과를 뺐다. 두레박이 점점 올라온다$Disable_Ingame_Item&Enable_Ingame_Item$101&111
+3$2006$4$와! 다행이야!$Disable_Ingame_Item&Enable_Ingame_Item$111&110
+3$2006$5$내가 같은 쥐를 도와줬어!$End_Game$0
+3$2105$1$기름병을 바닥에 사용했다$Enable_Ingame_Item&Remove_InventoryItem&Add_Condition$102&3&31
+3$2105$2$고양이가 유리가 깨지는 소리에 이쪽을 처다봤지만 들키지 않았다.$-$0
+3$2106$1$유리조각과 기름으로 미끌미끌해진 바닥이다.$-$0
+3$2101$1$밧줄을 걸었다$Enable_Ingame_Item&Remove_InventoryItem$103&2
+3$2101$2$쇠고리에도 밧줄을 걸었다.$Disable_Ingame_Item&Enable_Ingame_Item&Add_Condition&Remove_Condition$103&105&33&32
+3$2100$1$밧줄을 걸었다$Enable_Ingame_Item&Remove_InventoryItem$104&2
+3$2100$2$쇠꼬챙이에도 밧줄을 걸었다$Disable_Ingame_Item&Enable_Ingame_Item&Add_Condition&Remove_Condition$104&105&33&32
+3$2110$1$단단하게 걸린 밧줄이다$-$0
+3$2110$2$이쪽으로 고양이를 유인해 넘어트릴수 있을것같다.$-$0
+3$2110$3$그전에 넘어지는 위치에 위험한 물건을 깔아볼까?$-$0
+3$2200$1$바닥에 밤송이를 흩뿌렸다$Enable_Ingame_Item&Add_Condition&Remove_InventoryItem&Remove_Condition&Add_Condition$106&40&1&36&38
+3$2200$2$이제 고양이의 주의를 끌어보자!$-$0
+3$1100$1$두레박을 해체했다.$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem&Remove_Condition&Remove_Condition&Remove_Condition$51&2&4&3&15&22
+3$1200$1$기름병묶은 두레박을 해체했다.$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem&Remove_Condition&Remove_Condition&Remove_Condition$52&3&51&3&15&22
+3$1300$1$균형두레박을 해체했다.$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem&Remove_Condition&Remove_Condition&Remove_Condition$53&5&52&3&15&22
+3$2102$1$고양이한테 사과를 던져 주의를 끌었다$-$0
+3$2102$2$고양이가 달려가다 기름을 밟고 미끄러지고 줄에 걸렸다.$Disable_Ingame_Item&Enable_Ingame_Item$12&107
+3$2102$3$줄에걸린 고양이는 밤송이에 찔렸다! 아프겠다…!킥 킥….!$Disable_Ingame_Item&Enable_Ingame_Item$107&108
+3$2102$4$끝$End_Game$0
+3$300$1$고양이 때문에 밧줄을 거는것보다 먼저 해야할 일이 있을것같아$-$0
+3$300$2$예를들면 바닥을 미끌미끌하게 만든다거나?$-$0
+3$301$1$밤송이를 사용하기전 할 일이 있을거야! 지금은 너무 위험해$Add_Condition$40
+3$500$1$이곳에 밧줄 같은것을 걸어 고양이를 넘어트릴수 있지 않을까?(지력힌트)$-$0
+3$500$2$뒤에는 뾰족뾰족한 밤송이를 놔둬서 찌르거나(지력힌트)$-$0
+3$501$1$이 밧줄 쇠꼬챙이에 걸거나 어딘가에 연결해 두레박을 만들자!$Disable_Ingame_Item&Get_InventoryItem&Show_Get_Item$3&2&2
+3$10000$1$앗 고양이잖아?$Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage3_ingame_BGM&419
+3$10000$2$우와 고양이는 너무 무서워…$-$0
+3$10000$3$여기 말고 다른곳으로 돌아가야 겠…$-$0
+3$10000$4$어?  저기 누가 있잖아? $-$0
+3$10000$5$어쩌지 고양이때문에 못 내려오고 있잖아$-$0
+3$10000$6$내가 도와줘야겠다.$ResetScriptPanelPosition$0
+3$9997$1$다른 아이템을 사용해보자$-$0
+3$9998$1$조합이 실패한것같아요$-$0
+3$9999$1$분해를 실패한것 같아요$-$0
+4$1$1$고양이가 깔고앉은 두레박이다!$-$0
+4$1$2$고양이가 너무 무서워 조사가 불가능 할것같아!$-$0
+4$2$1$우물을 조사 벽을 타고 내려가볼까 팝업 뜸(후에 수정)$-$0
+4$3$1$접시위에 고기가 담겨있어$Disable_Ingame_Item$3
+4$3$2$앗!!!$-$0
+4$3$3$어쩌지 접시가 깨지고 고기가 땅에 떨어졌어! \n도망가자$Enable_Ingame_Item$11
+4$3$4$으아아악 인간이다!$Enable_Ingame_Item$4
+4$3$5$누가 접시를 깨놨어! $-$0
+4$3$6$인간: 아까운 고기 다 버렸네 에휴$-$0
+4$3$7$인간: 그냥 파묻어야겠다.$Enable_Ingame_Item$6
+4$3$8$강아지: 킁킁 이게 무슨냄새지? 어…! 고기다!$Disable_Ingame_Item&Disable_Ingame_Item&Enable_Ingame_Item$4&5&7
+4$3$9$강아지: 히히히히힣 고기$Disable_Ingame_Item&Disable_Ingame_Item$6&7
+4$3$10$구덩이만 남았네… $Enable_Ingame_Item$8
+4$4$1$팔랑팔랑한 천조각을 얻었다 어디다 쓰지?$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$9&1&1&1&1
+4$5$1$와 낙엽이 이렇게 많아 여러 개 가져가자$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$10&2&2&2
+4$6$1$깨진 접시조각이야! 날카로운게 쓸모가 있겠어$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$11&3&2&3&3
+4$7$1$여기 있는 실 굉장히 유용할것같은데?$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$12&4&5&4&4
+4$8$1$나뭇가지를 좀 주워볼까?$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$13&5&5&5
+4$1000$1$상당히 엉성한 연을 만들었다.$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$1&5&100&7
+4$1000$2$이걸로는 아직 아무것도 할 수 없어!$-$0
+4$9$1$엉성한연을 우물에 사용했지만 이걸 타고 내려갈수가 없다$-$0
+4$1001$1$엉성한연 실 조합 실을 잘라야 제대로 묶을수 있을것같다.$-$0
+4$1002$1$실이질겨 잘 잘리지 않는다.$-$0
+4$1004$1$접시조각으로 실을 잘랐다.$Remove_InventoryItem&Get_InventoryItem$4&101
+4$1005$1$완벽한 연을 만들었더!$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem$100&101&102
+4$1006$1$완벽한연사용하고엔드게임$End_Game$0
+4$1100$1$실이 너무 길다 잘라야 할것같아!$Add_Condition$6
+4$2000$1$구덩이에나뭇가지 사용$Remove_InventoryItem&Enable_Ingame_Item&Add_Condition$5&14&21
+4$2001$1$나뭇가지구덩이에 천사용$Remove_InventoryItem&Enable_Ingame_Item&Add_Condition$1&15&23
+4$2003$1$천에 낙엽사용$Remove_InventoryItem&Disable_Ingame_Item&Enable_Ingame_Item&Add_Condition$2&15&16&24
+4$2005$1$고양이깨움$End_Game$0
+4$50$1$팔랑팔랑한 천조각이다$-$0
+4$51$1$낙엽을 얻었다. 음 자연의 냄새$-$0
+4$52$1$깨진 접시조각이다. 날카롭다. 무언가를 자를수 있을지도$-$0
+4$53$1$긴 실이다. 너무길다$-$0
+4$54$1$나뭇가지이다. 튼튼하네$-$0
+4$55$1$엉성한 연이다. 무언가로 고정시켜야겠어$-$0
+4$56$1$잘린 실이다. 적당한 길이야$-$0
+4$57$1$완벽한 연을 만들었다! 최고야 이제 사용하면 돼!$-$0
+4$2010$1$엉성한 연을 천과 나뭇가지 두개로 분해했다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem&Remove_Condition$100&1&5&7
+4$2011$1$완벽한 연을 분해했다$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem$102&100&101
+4$11$1$엉성한 연을 사용하려고 했지만 너무 위험하다 가지 못할것같다$-$0
+4$12$1$강아지다 열심히 자고있다$-$0
+4$13$1$구덩이이다. 꽤 깊게 파여있다.$-$0
+4$15$1$구덩이 위에 나뭇가지를 올렸다$-$0
+4$16$1$나뭇가지가 올라간 구덩이 위에 천을 올렸다$-$0
+4$17$1$천이 올라간 곳 위에 낙엽을 덮어 완전범죄를 꿈꿨다.$-$0
+4$9997$1$다른 아이템을 사용해보자$-$0
+4$9998$1$조합이 실패한것같아요$-$0
+4$9999$1$분해를 실패한것 같아요$-$0
+5$1$1$미니어쳐 주차콘 장난감이다. 진짜 주차콘 옆에 귀엽게 세워져 있다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$1&1&1&1
+5$2$1$겨우겨우 안경을 얻어냈다. 죽는줄 알았어$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$2&2&2&2
+5$3$1$나뭇잎을 주워왔다. 어딘가 쓸 곳이 있을까?$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$3&3&3&3
+5$4$1$누가 생크림이 묻은 포크를 버리고 간것을 주웠다 어딘가에 끼워쓸수 있을지도$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$4&4&2&4&4
+5$5$1$플렌카드의 줄이 조금 쓸모가 있을것같아 갉아서 가져왔다$Disable_Ingame_Item&Enable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$5&6&6&6&6
+5$6$1$가게주인이다. 조금 졸고있다. 나도 피곤한데$-$0
+5$7$1$주변에 굴러다니는 돌을 얻었다$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$8&5&5&5
+5$8$1$환기통이다. 계속 무언가가 빨려들어가고있다$-$0
+5$9$1$닫힌 자동문이다 무언가 큰 물체가 움직여야 센서가 작동한다$Add_Condition$13
+5$10$1$자제들이다. 굉장히 많이 쌓여있는데$-$0
+5$11$1$트럭이다. 플렌카드를 걸고있는 저기에잇는 줄은 쓸모있겠어$-$0
+5$12$1$센서다. 나는 가벼워 인식하지 못한다$-$0
+5$13$1$포크로 환기통을 열려고 했지만 자꾸 헛돈다$-$0
+5$15$1$지렛대를 사용해 환기구 뚜껑을 열었다$Enable_Ingame_Item&Add_Condition$10&6
+5$16$1$환기통안쪽으로 바람이 빨려 들어간다 가벼운건 빨려들어갈수도?$-$0
+5$20$1$마른 나뭇잎을 환기구 근처에 놓았다. 후후 할수 있을것같은데$Enable_Ingame_Item&Remove_InventoryItem&Add_Condition&Change_Ingame_ItemPos$3&3&8&1.5|-3.85|-1
+5$21$1$나뭇잎이다 놓여져 있는$-$0
+5$22$1$뚜껑은 아까 열었다 그전에 할 일을 찾아보자 $-$0
+5$25$1$안경을 사용했다. 하지만 너무 커 알만 잘라써야할것같은데$-$0
+5$30$1$안경알을 사용해 나뭇잎에 불을 붙였다 연기가 난다. 하지만 흩어진다 어쩌지?$Add_Condition$11
+5$35$1$주차콘을 환기구 안에 꽃았다$Remove_InventoryItem$1
+5$35$2$엔드게임$End_Game$0
+5$40$1$자재가 묶였다.$Enable_Ingame_Item&Add_Condition&Remove_InventoryItem$17&22&6
+5$45$1$트럭에 줄을 묶었다$Disable_Ingame_Item&Enable_Ingame_Item&Add_Condition$17&18&24
+5$45$2$얼마 지나지 않아 트럭이 저 멀리 사라졌다$Disable_Ingame_Item&Enable_Ingame_Item$16&21
+5$45$3$실이 팽팽하게 당겨지며 자재가 우당탕탕 넘어졌다$Disable_Ingame_Item&Enable_Ingame_Item$15&19
+5$45$4$문이 열렸다$Disable_Ingame_Item&Enable_Ingame_Item&Add_Condition$13&14&26
+5$50$1$흰옷을 입은 사람들이 와 와글와글 무슨일인이 알아보는 사이에 안쪽으로 들어갔다$End_Game$0
+5$100$1$미니어쳐 추차콘이다.$-$0
+5$101$1$마트아주머니가 쓰고있던 안경이다. 훔쳐왔다$-$0
+5$102$1$바스락거리는 마른 낙엽이다 어딘가에 쓸 일이 있을지도$-$0
+5$103$1$생크림이 묻어있는 단단한 플라스틱 포크이다$-$0
+5$104$1$어디서 주워온 돌이다$-$0
+5$105$1$플렌카드에서 뜯어온 줄이다$-$0
+5$106$1$안경알을 분해해 얻어낸 안경알이다$-$0
+5$107$1$포크와 돌로 만든 지렛데이다$-$0
+5$1001$1$포크와 돌을 조합해 지렛대를 만들었다$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$4&5&101&4
+5$2000$1$안경을 분해했다.$Remove_InventoryItem&Get_InventoryItem$2&100
+5$2001$1$지렛대를 분해했다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem$101&4&5
+5$9997$1$다른 아이템을 사용해보자$-$0
+5$9998$1$조합이 실패한것같아요$-$0
+5$9999$1$분해를 실패한것 같아요$-$0
+6$1$1$볼펜1번클릭 첫번째볼펜$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$7&1&2&1&1
+6$2$1$볼펜2번클릭첫번째볼펜$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$8&1&2&1&1
+6$3$1$볼펜3번클릭첫번째볼펜$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$9&1&2&1&1
+6$4$1$볼펜4번째클릭첫번째볼펜$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$10&1&2&1&1
+6$5$1$볼펜5번째클릭첫번째볼펜$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$11&1&2&1&1
+6$6$1$볼펜1번클릭두번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$7&1&2&3&2&2
+6$7$1$볼펜2번클릭두번째볼팬$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$8&1&2&3&2&2
+6$8$1$볼펜3번클릭두번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$9&1&2&3&2&2
+6$9$1$볼펜4번째클릭두번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$10&1&2&3&2&2
+6$10$1$볼펜5번째클릭두번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$11&1&2&3&2&2
+6$11$1$볼펜1번클릭3번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$7&2&3&4&3&3
+6$12$1$볼펜2번클릭3번째볼팬$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$8&2&3&4&3&3
+6$13$1$볼펜3번클릭3번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$9&2&3&4&3&3
+6$14$1$볼펜4번째클릭3번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$10&2&3&4&3&3
+6$15$1$볼펜5번째클릭3번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$11&2&3&4&3&3
+6$16$1$볼펜1번클릭4번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$7&3&4&5&4&4
+6$17$1$볼펜2번클릭4번째볼팬$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$8&3&4&5&4&4
+6$18$1$볼펜3번클릭4번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$9&3&4&5&4&4
+6$19$1$볼펜4번째클릭4번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$10&3&4&5&4&4
+6$20$1$볼펜5번째클릭4번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$11&3&4&5&4&4
+6$21$1$볼펜1번클릭5번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$7&4&5&6&5&5
+6$22$1$볼펜2번클릭5번째볼팬$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$8&4&5&6&5&5
+6$23$1$볼펜3번클릭5번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$9&4&5&6&5&5
+6$24$1$볼펜4번째클릭5번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$10&4&5&6&5&5
+6$25$1$볼펜5번째클릭5번째볼펜$Disable_Ingame_Item&Remove_InventoryItem&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$11&4&5&6&5&5
+6$30$1$니퍼상자클릭$-$0
+6$30$2$팝업이 뜨며 니퍼를 얻었다$Disable_Ingame_Item&Enable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$6&12&7&8&7&7
+6$31$1$열린니퍼상자다$-$0
+6$35$1$완벽한 니퍼를 만들었다$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$7&102&105&9
+6$40$1$멀티탭 전원을 껐다$Remove_Condition&Add_Condition&Disable_Ingame_Item&Enable_Ingame_Item$10&12&14&13
+6$42$1$멀티탭 전원을 켰다$Remove_Condition&Add_Condition&Disable_Ingame_Item&Enable_Ingame_Item$12&10&13&14
+6$45$1$전선이다.$-$0
+6$50$1$전기에감전되어죽어버렷다$End_Game$0
+6$55$1$전선을무사히 얻었다$Disable_Ingame_Item&Enable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$15&16&9&18&9&9
+6$60$1$케이지다 부시거나 번호알아내자$-$0
+6$65$1$올라갈 길이 보이지 않는다 뭔가로 내려야할것같은데$-$0
+6$70$1$스프링노트를 얻었다$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$5&10&10&10
+6$75$1$전선이 너무 흐물에 무언가와 엮어야 할텐데$-$0
+6$80$1$연필을 담고있는 연필통에 갈고리가 걸렸다$Disable_Ingame_Item&Enable_Ingame_Item&Enable_Ingame_Item$3&18&19
+6$80$2$연필이 쓰러지며 갈고리가 풀렸다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem$106&103&9
+6$85$1$연필을 얻었다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$19&6&6&6
+6$90$1$엔드게임지력루트$End_Game$0
+6$95$1$철창에 노트가 묶였다$Enable_Ingame_Item&Add_Condition$20&37
+6$100$1$볼펜이 책상 위에 올라왔다$Enable_Ingame_Item&Add_Condition$21&39
+6$101$1$볼펜을 책상위에 올리기에는 아직 수가 너무 적은것같다$-$0
+6$110$1$책이 쓰러졌다.$Disable_Ingame_Item&Enable_Ingame_Item$20&22
+6$110$2$으아아아악 피했다. $Disable_Ingame_Item&Enable_Ingame_Item$22&23
+6$110$3$케이지가 박살이났다. 그리고 그 사이에서$-$0
+6$110$4$CSI쥐가 겨우 빠져나왔다$End_Game$0
+6$120$1$한 개의 펜이다$-$0
+6$121$1$두개의 펜이다$-$0
+6$122$1$세개의 펜이다$-$0
+6$123$1$네개의 펜이다$-$0
+6$124$1$다섯개의 펜이다 이방의 펜을 모두 모았다$-$0
+6$125$1$사용흔적이 있는 연필이다$-$0
+6$126$1$고장난 니퍼다 스프링이 빠져있는것같은데?$-$0
+6$127$1$전선에서 분해한 구리선이다. 적당히 얇다$-$0
+6$128$1$뜯겨진 전선이다 안에는 얇은 구리선이 들어가있다$-$0
+6$129$1$무언가가 쓰여져있는 노트다 내용은 별거없다$-$0
+6$130$1$연필을 갉아 만든 연필가루이다.$-$0
+6$131$1$스프링이 빠진 펜 껍데기이다$-$0
+6$132$1$펜의 스프링이다. 적절한곳에 들어갈것같다$-$0
+6$133$1$책을 갉아 나온 스프링 노트의 조각이다. 끝이 휘어져있다$-$0
+6$134$1$구리선에 묶인 노트다.$-$0
+6$135$1$고쳐진 니퍼다 이제 잘 사용할수 있을것같다$-$0
+6$136$1$전선과 조각을 조합해 만든 갈고리다.어디던질까?$-$0
+6$137$1$잘 굴러가는 많은 펜들이다.$-$0
+6$1000$1$볼펜을분해해 스프링을 얻었다$Get_InventoryItem&Add_Condition$102&7
+6$1001$1$스프링은이미있다$-$0
+6$1005$1$스프링노트를 분해해 휘어진 조각을 얻었다$Get_InventoryItem&Add_Condition$103&20
+6$1010$1$임시 갈고리를 만들었다$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$9&103&106&22
+6$1020$1$연필을 이빨로 갈았다.$Remove_InventoryItem&Get_InventoryItem&Add_Condition$6&100&24
+6$1050$1$스프링노트와 전선을 묶기에는 너무 두껍다$-$0
+6$1060$1$구리선을 얻었다.$Get_InventoryItem&Add_Condition$8&32
+6$1070$1$노트에구리선묶음$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$8&10&104&34
+6$2000$1$니퍼를 분해했다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem$105&7&102
+6$2001$1$임시 갈고리를 해체했다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem$106&103&9
+6$10000$1$CSI쥐가 저기있어$Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage2_ingame_BGM&419
+6$10000$2$하 어떻게 구하면 좋을까$-$0
+6$10000$3$번호를 입력하거나…$Add_Condition$10
+6$10000$4$케이지를 부시거나$-$0
+6$10000$5$둘 중에 하나를 해보자!$ResetScriptPanelPosition$0
+6$9997$1$다른 아이템을 사용해보자$-$0
+6$9998$1$조합이 실패한것같아요$-$0
+6$9999$1$분해를 실패한것 같아요$-$0
+7$1$1$나뭇가지 잡음$-$0
+7$2$1$너무멀다 일단 내려갈 방법을 찾자$-$0
+7$3$1$낙하산이다$-$0
+7$4$1$나뭇가지로 낙하산을 때렸다.$-$11
+7$4$2$탕탕 거리는 소리를 듣고 토끼가 나타났다.$Enable_Ingame_Item&Disable_Ingame_Item$10&2
+7$4$3$토끼가 나를 구해줬다.$Enable_Ingame_Item&Disable_Ingame_Item&Add_Condition$11&2&5
+7$5$1$토끼가사는구멍이다.$-$0
+7$6$1$둥지를 살피기에는 너무 멀다.$Add_Condition$9
+7$7$1$새가 있는것같은데… 가까이 가서 봐야할것같은데.$Add_Condition$9
+7$8$1$우와 절벽… 너무 무서워.$-$0
+7$9$1$절벽 굉장히 깊다….$Add_Condition$9
+7$10$1$밭에서 오동통한 지렁이를 얻었다.$Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$2&14&2&2
+7$11$1$끈적진액얻었다.$Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$101&15&101&101
+7$12$1$착하고다정한북부우는토끼다.$-$0
+7$13$1$너무 멀다.$-$0
+7$15$1$북부우는토끼에게 나뭇가지를 줬다 건너갈수 있을것같은데?$Disable_Ingame_Item&Enable_Ingame_Item&Remove_InventoryItem&Add_Condition$10&12&1&12
+7$20$1$아기 새다 짹짹거리며 밥을 달라고 하고있다. \n배가 고픈가?$-$0
+7$25$1$아기 새가 지렁이를 먹고 똥을 쌌다. 우와…$Remove_InventoryItem&Enable_Ingame_Item$2&13
+7$25$2$아기새가 똥을 싼 것을 보고 엄마새가 등장했다.$Enable_Ingame_Item$15
+7$30$1$둥지 근처에 있는 깃털을 주웠다.$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$14&3&16&3&3
+7$40$1$엄마새를 타고 가겠습니까?$-$0
+7$40$2$성공시 엔드게임$End_Game$0
+7$50$1$낙하산타고엔드게임(지력루트)$End_Game$0
+7$60$1$나뭇가지를 얻었다.$Get_InventoryItem&Disable_Ingame_Item&AppearGetItem&DisappearGetItem$1&16&1&1
+7$70$1$떨어진 낙하산이다.$Get_InventoryItem&Disable_Ingame_Item&AppearGetItem&DisappearGetItem$4&11&4&4
+7$72$1$지렁이를 얻은 밭이다.$-$0
+7$74$1$진액을 얻은 풀이다.$-$0
+7$76$1$새가있는 둥지다.$-$0
+7$78$1$똥을 얻었다.$Get_InventoryItem&Disable_Ingame_Item$0
+7$80$1$나를 도와주는 북부우는토끼다$-$0
+7$1000$1$깃털진액붙임$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$3&101&103&15
+7$1001$1$완벽낙하산$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$4&103&102&20
+7$1005$1$깃털붙일만한거필요$-$0
+7$100$0$단단한 나뭇가지다$-$0
+7$101$0$지렁이다.  아주 오통통하니 먹기 딱 좋을것 같다$-$0
+7$102$0$폭신폭신한 깃털이다. 털이 꽤나 촘촘하다$-$0
+7$103$0$뜯겨진 낙하산이다.  이 낙하산을 메울수만 있다면 좋을텐데$-$0
+7$104$0$끈적한 진액이다. 정말 끈적거려 무언가에 붙일수 있을듯하다$-$0
+7$105$0$진액과 깃털을 조합해 낙하산의 끊어진 부분을 메운 낙하산이다$-$0
+7$106$0$끈적한 진액과 깃털을 조합했다$-$0
+7$10000$1$탐험루트1$Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage2_ingame_BGM&419
+7$10000$2$탐험한다$-$0
+7$10000$3$체력쥐오짐$Add_Condition$1
+7$10000$4$체력체력$-$0
+7$10000$5$쨘$ResetScriptPanelPosition$0
+7$9997$1$다른 아이템을 사용해보자$-$0
+7$9998$1$조합이 실패한것같아요$-$0
+7$9999$1$분해를 실패한것 같아요$-$0
+8$1$1$이 뿌리는 너무 단단해서 뜯어낼 수 없을 것 같다$-$0
+8$2$1$(컷인씬) 춤추는 쥐와 작은 인간이다$-$0
+8$3$1$조개껍질를 얻었다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$3&1&1&1
+8$4$1$이곳만 바닥이 질퍽거린다$Disable_Ingame_Item$6
+8$4$2$이끼를 치웠다.$-$0
+8$5$1$이곳을 파보니 물이 흘러나온다.$Enable_Ingame_Item$8
+8$6$1$바닥에서 새어나오고 있는 물이다.$-$0
+8$8$1$조개껍질을 사용해 물을 떴다.$Remove_InventoryItem&Get_InventoryItem$1&2
+8$10$1$물로 땅을 무르게 했다.$Add_Condition$9
+8$12$1$뿌리를 뜯어냈다.$Disable_Ingame_Item&Add_Condition$1&11
+8$17$1$물로 흙을 씻어냈다.$Disable_Ingame_Item$4
+8$50$1$뿌리가 너무 억세 뜯을수 없다.$-$0
+8$50$2$나에게 조금만 더 힘이 있었다면….! 다른길을찾아보자.$-$0
+8$15$1$흙뒤에 뭐가 있는것같은데 딱딱하게 굳어서 뜯어지지 않는다.$-$0
+8$30$1$석판퍼즐(성공함)$Disable_Ingame_Item$5
+8$51$1$땅이물러졌지만 뿌리를 뜯어내는건 힘들다 .$-$0
+8$40$1$두번째 통로로 들어갔다.$End_Game$0
+8$45$1$첫번째 통로로 들어갔다.$End_Game$0
+8$100$1$조개껍데기이다.$-$0
+8$101$1$물이 담긴 조개껍질이다.$-$0
+8$10000$1$동굴안으로 떨어졌어 $Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage2_ingame_BGM&419
+8$10000$2$어떻게 빠져나가야 하지?$ResetScriptPanelPosition$0
+8$9997$1$다른 아이템을 사용해보자.$-$0
+8$9998$1$조합이 실패한것같아요.$-$0
+8$9999$1$분해를 실패한것 같아요.$-$0
+9$1$1$상자를 열려했지만 너무 두껍다$-$0
+9$2$1$나뭇가지를 얻었다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$2&4&4&4
+9$3$1$대나무다$-$0
+9$4$1$대나무썩은 부분이다$-$0
+9$5$1$야자나무잎을 얻었다.$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$5&10&11&10&10
+9$6$1$묶여있던 덩굴을 얻었다$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$6&1&1&1
+9$7$1$지푸라기다$-$0
+9$8$1$열린상자다$-$0
+9$13$1$소라개이다$-$0
+9$14$1$열매다$-$0
+9$17$1$흙이다$-$0
+9$18$1$바다다$-$0
+9$20$1$상자에 나뭇가지를 사용했다$Disable_Ingame_Item&Enable_Ingame_Item&Enable_Ingame_Item$1&100&101
+9$22$1$설계도를 얻었다$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$101&3&3&3
+9$24$1$야자수열매에 묶음$Enable_Ingame_Item&Add_Condition$103&6
+9$26$1$반대쪽에 묶음$Add_Condition&Disable_Ingame_Item&Enable_Ingame_Item$8&103&104
+9$28$1$야자수 열매떨어지며 대나무 썩은 부분 나옴$Disable_Ingame_Item&Disable_Ingame_Item&Change_Ingame_ItemPos&Add_Condition$3&104&14|-3.27|-0.85&10
+9$30$1$야자수열매를 얻었다.(인게임야쟈수열매)(인벤야자수열매)$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$14&15&15&15
+9$31$1$대나무를 얻었ㄷ$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$4&16&16&16
+9$32$1$바다에 야자수 잎을 사용했다 짠물을 얻었다$Remove_InventoryItem&Get_InventoryItem&Add_Condition$10&13&14
+9$34$1$흙에 물을 부었다 진흙이되었다$Enable_Ingame_Item$16
+9$36$1$진흙이으로 진흙그릇을 만들었다$Get_InventoryItem&Add_Condition$9&18
+9$38$1$나뭇가지를 사용해 지푸라기에 불이 붙었다$Enable_Ingame_Item&Add_Condition$8&20
+9$40$1$불에다 진흙그릇을 구웠다 토기됨$Remove_InventoryItem&Get_InventoryItem&Add_Condition$9&7&24
+9$42$1$토기를 줬더니 껍질을 벗고 토기를 쓰고감$Disable_Ingame_Item&Enable_Ingame_Item&Remove_InventoryItem&Add_Condition$13&12&7&28
+9$50$1$소라개껍질과 대나무통을 이용해 드릴 조합$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$8&16&6&30
+9$51$1$소라게껍질을 얻었다$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$12&8&8&8
+9$52$1$엔드게임$End_Game$0
+9$60$1$대나무가 쪼개졋다$Add_Condition&Remove_InventoryItem&Get_InventoryItem$33&16&2
+9$62$1$쪼개진 열매$Remove_InventoryItem&Get_InventoryItem&Add_Condition$15&5&34
+9$64$1$대나무 배 통 만들어짐$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$2&5&14&36
+9$66$1$야자나무잎과 나뭇가지 조합$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$4&10&11&38
+9$68$1$돛닫ㄴ배완성!$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$11&14&12&40
+9$70$1$체력루트엔드게임$End_Game$0
+9$300$1$덩굴이다.$-$0
+9$301$1$쪼개진대나무통이다$-$0
+9$302$1$설계도다$-$0
+9$303$1$나뭇가지다$-$0
+9$304$1$쪼개진야자수열매다$-$0
+9$305$1$드릴이다$-$0
+9$306$1$토기이다$-$0
+9$307$1$소라게껍질이다$-$0
+9$308$1$진흙그릇이다$-$0
+9$309$1$야자수잎이다$-$0
+9$310$1$돛이다$-$0
+9$311$1$돛단배다$-$0
+9$312$1$짠물이다$-$0
+9$313$1$배다$-$0
+9$314$1$야자수열매다$-$0
+9$315$1$리얼대나무다$-$0
+9$10000$1$망망대해 무인도야 어쩌면 좋지?$Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage2_ingame_BGM&419
+9$10000$2$어떻게 빠져나가야 하지?$ResetScriptPanelPosition$0
+9$9997$1$다른 아이템을 사용해보자$-$0
+9$9998$1$조합이 실패한것같아요$-$0
+9$9999$1$분해를 실패한것 같아요$-$0
+10$1$1$기름통을 얻었다. 안에 기름이 흘러넘친다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$1&1&1&1
+10$2$1$8센티미더정도의 부지깽이를 얻었다. 조금 무거운데?$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$2&2&5&2&2
+10$3$1$무언가를 부실수 있을 정도로 폭발력이 강한 폭죽가루다.$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$3&3&3&3
+10$3$2$어? 내가 이런걸 어떻게 알고있지?$-$0
+10$4$1$첫번째 소각장 문을 열었다$Disable_Ingame_Item&Enable_Ingame_Item$4&41
+10$441$1$첫번째 소각장 문을 닫았다$Disable_Ingame_Item&Enable_Ingame_Item$41&4
+10$6$1$세번째 소각장 문을 열었다$Disable_Ingame_Item&Enable_Ingame_Item$6&61
+10$61$1$세번째 소각장 문을 닫았다$Disable_Ingame_Item&Enable_Ingame_Item$61&6
+10$10$1$연구원의 옷자락을 얻었다?$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$10&5&5&5
+10$10$2$어…? 내가 이 흰 천이 연구원의 옷자락이란걸 어떻게 알았지?$-$0
+10$11$1$동물의 뼈다. 어느 동물이지?$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$11&4&4&4
+10$12$1$끊어진줄을 얻었다. 어느곳에 사용했는지는 모르겠다.$Add_Condition&Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$2&12&6&6&6
+10$13$1$철사를 빼려고 노력했지만 뺄수없었다.$-$0
+10$13$2$흠… 좀 미끌미끌한걸 바르면 뺄 수 있을수도…?$-$0
+10$15$1$기름칠을 해서 철사를 겨우 뺐습니다.$Disable_Ingame_Item&Get_InventoryItem&Remove_InventoryItem&AppearGetItem&DisappearGetItem$16&7&1&7&7
+10$20$1$4~6cm정도의 첫번째 구멍이다.$-$0
+10$21$1$4~6cm정도의 두번째 구멍이다.$-$0
+10$22$1$4~6cm정도의 세번째 구멍이다.$-$0
+10$24$1$부지깽이를 여기에 사용해봤지만 구멍이 너무 작아들어가지 않았다.$-$0
+10$26$1$부지깽이를 여기에 사용해봤지만 구멍이 너무 작아들어가지 않았다.$-$0
+10$28$1$부지깽이를 여기에 사용해봤지만 구멍이 너무 작아들어가지 않았다.$-$0
+10$30$1$철사를 구멍에 끼워넣었지만 어떻게 해야할지 모르겠어서 뺐다.$-$0
+10$31$1$철사를 구멍에 끼워넣었다. 딱 알맞게 들어갔다.$Enable_Ingame_Item&Remove_InventoryItem&Add_Condition$28&100&12
+10$32$1$철사를 구멍에 끼워넣었지만 어떻게 해야할지 모르겠어서 뺐다.$-$0
+10$33$1$철사를 구멍에 끼워넣었다. 딱 알맞게 들어갔다.$Enable_Ingame_Item&Remove_InventoryItem&Add_Condition$29&100&14
+10$34$1$철사를 구멍에 끼워넣었지만 어떻게 해야할지 모르겠어서 뺐다.$-$0
+10$35$1$철사를 구멍에 끼워넣었다. 딱 알맞게 들어갔다.$Enable_Ingame_Item&Remove_InventoryItem&Add_Condition$30&100&16
+10$1000$1$줄에 철사가 묶였다.$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem$6&7&100
+10$40$1$철사에 묶인 줄이 레버에 묶였다 1 (폭죽X 불X)$Add_Condition&Disable_Ingame_Item&Enable_Ingame_Item$20&28&31
+10$41$1$다시 수거했다.$Disable_Ingame_Item&Get_InventoryItem&Remove_Condition$28&100&12
+10$70$1$철사에 묶인 줄이 레버에 묶였다 2 (폭죽X 불O)$Add_Condition&Disable_Ingame_Item&Enable_Ingame_Item$22&29&32
+10$71$1$다시 수거했다.$Disable_Ingame_Item&Get_InventoryItem&Remove_Condition$29&100&14
+10$42$1$철사에 묶인 줄이 레버에 묶였다 3 (폭죽X 불X)$Add_Condition&Disable_Ingame_Item&Enable_Ingame_Item$24&30&33
+10$43$1$다시 수거했다.$Disable_Ingame_Item&Get_InventoryItem&Remove_Condition$30&100&16
+10$50$1$자동레버다$-$0
+10$50$2$반대쪽으로 레버가 돌아간다.$-$0
+10$51$1$타공카드로 열리는 서랍이다$-$0
+10$52$1$문 아래 고무가 진득하게 묻어있다.$-$0
+10$52$2$고무가 붙어서 문이 열리지 않는다.$-$0
+10$53$1$문이다$-$0
+10$60$1$소각장 두번째 문이다$-$0
+10$62$1$소각장 두번째 문에 폭죽을 열었다.$Add_Condition&Remove_InventoryItem$50&3
+10$80$1$레버를 돌렸다(좀더 땡겨진 줄) 아무일도 일어나지 않았다.$Disable_Ingame_Item&Enable_Ingame_Item$31&34
+10$80$2$불이 붙었다.$Enable_Ingame_Item&Add_Condition$37&40
+10$82$1$레버를 돌렸다(좀 더 땡겨진 줄) 불붙음$Disable_Ingame_Item&Enable_Ingame_Item$32&35
+10$82$2$불붙음$Enable_Ingame_Item&Add_Condition$38&40
+10$84$1$레버를 돌렸다(좀 더 땡겨진 줄)아무 일도 일어나지 않았다.$Disable_Ingame_Item&Enable_Ingame_Item$33&36
+10$84$2$불붙음$Enable_Ingame_Item&Add_Condition$39&40
+10$81$1$단단하게 묶인 줄이다.$-$0
+10$83$1$단단하게 묶인 줄이다.$-$0
+10$85$1$단단하게 묶인 줄이다.$-$0
+10$90$1$소각장 두번째 구멍이다. 철사를 끼워넣었다.$Add_Condition$34
+10$92$1$폭죽넣은상태다 레버에묶였다.(폭죽X 불O)$Add_Condition&Disable_Ingame_Item&Enable_Ingame_Item$36&29&32
+10$94$1$레버를 돌렸다(좀 더 땡겨진 줄) 불이 붙음과 동시에.$Enable_Ingame_Item$35
+10$94$2$폭죽이 터졌다.$Enable_Ingame_Item&Enable_Ingame_Item&Disable_Ingame_Item$21&22&32
+10$100$1$무너진 소각장에서 상자를 얻었다.$Get_InventoryItem&Get_InventoryItem&Get_InventoryItem&Disable_Ingame_Item$101&202&203&22
+10$110$1$작은뼈다.$Get_InventoryItem$200
+10$120$1$열쇠$Get_InventoryItem$201
+10$130$1$불이붙어있다$-$0
+10$131$1$부지깽이를 불에 가져다 대자 너무 뜨거워 놓쳤다.$-$0
+10$140$1$부지깽이를 천으로 감쌌다.$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem$2&5&102
+10$150$1$달궈진 부지깽이를 얻었다$Remove_InventoryItem&Get_InventoryItem$102&103
+10$160$1$달궈진 부지깽이로 고무를 녹였다.$Disable_Ingame_Item&Add_Condition$20&45
+10$170$1$문이 열렸다.$End_Game$0
+10$200$1$불붙게한부지깽이다$-$0
+10$201$1$불붙게한부지깽이다$-$0
+10$202$1$불붙게한부지깽이다$-$0
+10$205$1$끼웠는데 어떻게하지?(폭죽2번)$Enable_Ingame_Item&Remove_InventoryItem&Add_Condition$29&100&52
+10$206$1$레버에 묶였다.(폭죽넣은상태)$Add_Condition&Disable_Ingame_Item&Enable_Ingame_Item$53&29&32
+10$207$1$레버를 돌렸다(좀 더 땡겨진 줄) 불이 붙었다.$Disable_Ingame_Item&Enable_Ingame_Item$32&35
+10$207$2$폭죽터짐$Add_Condition&Enable_Ingame_Item&Enable_Ingame_Item&Disable_Ingame_Item&Disable_Ingame_Item$40&21&22&5&38
+10$300$1$기름병이다$-$0
+10$301$1$부지깽이이다$-$0
+10$302$1$폭죽가루$-$0
+10$303$1$동물의뼈$-$0
+10$304$1$연구원옷자락$-$0
+10$305$1$끊어진줄$-$0
+10$306$1$녹슨철사$-$0
+10$307$1$줄에묶인철사$-$0
+10$308$1$타공카드(나중에 미니겜)$Remove_InventoryItem&Get_InventoryItem$308&313
+10$309$1$옷에싸인부지깽이$-$0
+10$310$1$달궈진부지쌩이$-$0
+10$311$1$열쇠$-$0
+10$312$1$13힌트카드$-$0
+10$313$1$완벽타공카드다.$-$0
+10$314$1$타공카드로 선반을 열었다.$-$0
+10$314$2$열쇠를 발견했다. 어디에 쓰는걸까$Get_InventoryItem$201
+10$10000$1$소각장이다!$Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage2_ingame_BGM&419
+10$10000$2$소각장을 빠져나가보자$ResetScriptPanelPosition$0
+10$9997$1$다른아이템을 사용해보자$-$0
+10$9998$1$조합이 실패한것같아요$-$0
+10$9999$1$분해를 실패한것 같아요$-$0
+11$1$1$라디오를 얻었다.고장이 났나?$Disable_Ingame_Item&Get_InventoryItem&AppearGetItem&DisappearGetItem$1&1&1&1
+11$2$1$책을 얻었다. 안쪽엔 별게 없다$Add_Condition&Get_InventoryItem&AppearGetItem&DisappearGetItem$3&2&2&2
+11$3$1$튀어나와있는데 움직이지 않는 책이다1$-$0
+11$4$1$튀어나와있는데 움직이지 않는 책이다2$-$0
+11$5$1$튀어나와있는데 움직이지 않는 책이다3$-$0
+11$6$1$으악 이게 뭐야 우물에 머리를 박은 사람의… 어? 내가 이게 사람인지 어떻게 알았지?$-$0
+11$7$1$프로젝트 쥐 문서…? 이게 뭐지……?$-$0
+11$8$1$이건 … 도르레 라는거야… 도르레 뭐지 왜 이름을 알고있지?$-$0
+11$9$1$도르레의 위쪽이다.$-$0
+11$1000$1$라디오를 분해해 전선과 휘어진 라디오 조각을 얻었다$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem&Add_Condition&Add_Condition$1&101&102&2&5
+11$10$1$전선을 연결해 도르레가 움직이기 시작했다$Disable_Ingame_Item&Enable_Ingame_Item&Add_Condition&Remove_InventoryItem$15&14&6&101
+11$11$1$도르레에 있는 기계장치이다 on off 둘 다 있다.$-$0
+11$12$1$도르레에 걸려있는 줄이다$-$0
+11$13$1$전원이 연결되자 고정되지 않는 줄이 빙빙 돌아가기 시작했다(미니게임의 시작)$Remove_InventoryItem$101
+11$13$2$무언가로 막아야 할것같아!$Disable_Ingame_Item&Enable_Ingame_Item$18&17
+11$14$1$도르레 줄을 얻었다.$Disable_Ingame_Item&Get_InventoryItem&Add_Condition&AppearGetItem&DisappearGetItem$17&103&7&103&103
+11$15$1$도르레 줄을 걸었다.$Remove_InventoryItem&Enable_Ingame_Item&Remove_Condition&Remove_Condition$103&18&7&8
+11$16$1$그대로있으면 줄이 뱅뱅 돌아갈것같다 무언가 막을게 필요한데.$-$0
+11$18$1$책과 줄을 조합해 도르레에 걸었다 $Enable_Ingame_Item&Remove_InventoryItem&Add_Condition$10&107&15
+11$20$1$책이 걸려있다$Disable_Ingame_Item&Enable_Ingame_Item&Add_Condition$18&10&12
+11$22$1$드디어 올라왔다.$Disable_Ingame_Item&Enable_Ingame_Item$5&12
+11$23$1$멀어서 보이지 않는다.$-$0
+11$25$1$저기 뭐가 있는데? 뭐지?$-$0
+11$27$1$번호를 입력하고 엔드게임$End_Game$0
+11$30$1$위로 올라온 도르레에서 줄을 걷어왔다. 끙차$Disable_Ingame_Item&Get_InventoryItem$11&103
+11$32$1$책과 도르레 두개를 조합했다.$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem$2&103&107
+11$1002$1$훅 비슷한것을 만들었다$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem$102&103&104
+11$32$1$훅 비슷한것을 걸었다$Remove_InventoryItem&Enable_Ingame_Item&Add_Condition$104&52&18
+11$40$1$아이템들을 얻었다$Get_InventoryItem&Get_InventoryItem$105&106
+11$50$1$아래에 있는 눈이다.$-$0
+11$51$1$책이 걸려있는 줄이다$Add_Condition$13
+11$52$1$훅이다존멋$-$0
+11$53$1$불이들어와있는도르레다$-$0
+11$54$1$불이들어와있지 않은 도르레다.$-$0
+11$60$1$도르레가 올라왔다$Add_Condition&Enable_Ingame_Item&Enable_Ingame_Item&Disable_Ingame_Item&Disable_Ingame_Item$14&11&12&5&10
+11$70$1$더이상뽑을만한 책은 없어보인다.$-$0
+11$72$1$위로올라온도르레다 $-$0
+11$300$1$라디오$-$0
+11$301$1$책$-$0
+11$302$1$우물에머리를박은여자$-$0
+11$303$1$프로젝트쥐문서$-$0
+11$304$1$전선$-$0
+11$305$1$라디오조각$-$0
+11$306$1$도르레줄$-$0
+11$307$1$훅$-$0
+11$308$1$설계도$-$0
+11$309$1$열쇠$-$0
+11$310$1$줄과책묶임$-$0
+11$1000$1$줄과 책 분해$Remove_InventoryItem&Get_InventoryItem&Get_InventoryItem$107&2&103
+11$10000$1$여긴 도서관같은데$Enter_Ingame_Script&PLAY_BGM_SOUND&Change_Y_Position$0&Stage2_ingame_BGM&419
+11$10000$2$도서관을 빠져나가보자$ResetScriptPanelPosition$0
+11$9997$1$다른 아이템을 사용해보자$-$0
+11$9998$1$조합이 실패한것같아요$-$0
+11$9999$1$분해를 실패한것 같아요$-$0
+12$1$1$캐비넷이잠겨있다.$-$0
+12$2$1$캐비넷이잠겨있다.$-$0
+12$3$1$캐비넷이잠겨있다.$-$0
+12$4$1$캐비닛을 열었다$Enable_Ingame_Item$401&3
+12$4$2$9+1열쇠를 얻음$Get_InventoryItem&Disable_Ingame_Item&Add_Condition$3&115&7
+12$400$1$4번 캐비닛을 닫았다 $Disable_Ingame_Item&Remove_Condition&Add_Condition$401&3&4
+12$5$1$캐비넷이잠겨있다$-$0
+12$6$1$캐비넷이잠겨있다.$-$0
+12$7$1$캐비넷이잠겨있다.$-$0
+12$8$1$캐비넷이잠겨있다.$-$0
+12$9$1$캐비넷이잠겨있다.$-$0
+12$10$1$캐비넷이잠겨있다.$-$0
+12$11$1$캐비넷이잠겨있다.$-$0
+12$12$1$캐비넷이잠겨있다.$-$0
+12$13$1$캐비넷이잠겨있다.$-$0
+12$14$1$캐비넷이잠겨있다.$-$0
+12$15$1$캐비넷이잠겨있다.$-$0
+12$16$1$캐비넷이잠겨있다.$-$0
+12$17$1$캐비넷이잠겨있다.$-$0
+12$18$1$캐비넷이잠겨있다.$-$0
+12$19$1$캐비넷이잠겨있다.$-$0
+12$20$1$캐비넷이잠겨있다.$-$0
+12$21$1$캐비넷이잠겨있다.$-$0
+12$22$1$캐비넷이잠겨있다.$-$0
+12$23$1$캐비넷이잠겨있다.$-$0
+12$24$1$캐비넷이잠겨있다.$-$0
+12$25$1$캐비넷이잠겨있다.$-$0
+12$26$1$캐비넷이잠겨있다.$-$0
+12$27$1$캐비넷이잠겨있다.$-$0
+12$28$1$캐비넷이잠겨있다.$-$0
+12$29$1$캐비넷이잠겨있다.$-$0
+12$30$1$캐비넷이잠겨있다.$-$0
+12$31$1$캐비넷이잠겨있다.$-$0
+12$32$1$캐비넷이잠겨있다.$-$0
+12$33$1$캐비넷이잠겨있다.$-$0
+12$34$1$캐비넷이잠겨있다.$-$0
+12$35$1$캐비넷이잠겨있다.$-$0
+12$36$1$캐비넷이잠겨있다.$-$0
+12$37$1$캐비넷이잠겨있다.$-$0
+12$38$1$캐비넷이잠겨있다.$-$0
+12$39$1$캐비넷이잠겨있다.$-$0
+12$40$1$캐비넷이잠겨있다.$-$0
+12$41$1$캐비넷이잠겨있다.$-$0
+12$42$1$캐비넷이잠겨있다.$-$0
+12$43$1$캐비넷이잠겨있다.$-$0
+12$44$1$캐비넷이잠겨있다.$-$0
+12$45$1$캐비넷이잠겨있다.$-$0
+12$46$1$캐비넷이잠겨있다.$-$0
+12$47$1$캐비넷이잠겨있다.$-$0
+12$48$1$캐비넷이잠겨있다.$-$0
+12$49$1$캐비넷이잠겨있다.$-$0
+12$50$1$캐비넷이잠겨있다.$-$0
+12$51$1$캐비넷이잠겨있다.$-$0
+12$52$1$캐비넷이잠겨있다.$-$0
+12$100$1$바닥에떨어진열쇠얻음$Disable_Ingame_Item&Get_InventoryItem$100&12
+12$101$1$반만 그려진 설계도면 얻음$Disable_Ingame_Item&Get_InventoryItem$101&1
+12$102$1$연필 획득$Disable_Ingame_Item&Get_InventoryItem$102&2
+12$103$1$기계팔전원x$-$0
+12$104$1$기계본품전원x$-$0
+12$110$1$캐비닛첫번째영역$Enable_Ingame_Item$301
+12$115$1$개비넷 닫음$Disable_Ingame_Item$301
+12$300$1$4문이 닫혀있는 첫번째 캐비닛(열쇠없)$Enable_Ingame_Item$1
+12$301$1$4문이 열려있는 첫번째 캐비닛(열쇠있)$Enable_Ingame_Item&Enable_Ingame_Item&Enable_Ingame_Item$1&401&115
+12$302$1$4문이 열혀있는 첫번째 캐비닛(열쇠없)$Enable_Ingame_Item&Enable_Ingame_Item$1&401
+12$4$2$9+1열쇠를 얻음$Get_InventoryItem&Disable_Ingame_Item$3&115
+12$112$1$4번열려있는상태캐비닛$Enable_Ingame_Item&Enable_Ingame_Item$105&401
+12$114$1$4번 열쇠 얻은 상태에서 닫은 캐비닛$Enable_Ingame_Item$105
+12$120$1$캐비닛두번째영역$Enable_Ingame_Item$10
+12$130$1$캐비닛세번째영역$Enable_Ingame_Item$19
+12$111$1$  -$Enable_Ingame_Item&Enable_Ingame_Item&Enable_Ingame_Item&Add_Condition$1101&110&111&4
+12$140$1$전원x$-$0
+12$141$1$아무일도일어나지X$-$0
+12$142$1$캐비닛 닫힘$Disable_Ingame_Item&Disable_Ingame_Item&Disable_Ingame_Item&Add_Condition$1101&110&111&6
+12$145$1$전선이 빠져있음 기계팔 전선빼기$Add_Condition$8
+12$150$2$전선얻음$Get_InventoryItem$4
+12$155$1$2번캐비닛열림$Enable_Ingame_Item&Enable_Ingame_Item$201&108
+12$157$1$Dg열쇠획득$Get_InventoryItem$6
+12$158$1$고무장갑얻음$Get_InventoryItem$7
+12$159$1$캐비닛열림+긁힌종이$Enable_Ingame_Item&Get_InventoryItem$470&9
+12$160$1$캐비닛 닫음$Disable_Ingame_Item$470
+12$2000$1$고무장갑분해$Remove_InventoryItem&Get_InventoryItem&Add_Condition$7&8
+12$2002$1$전선고무장갑으로둘둘함$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem$8&4&100
+12$170$1$고친전선사용$Add_Condition$0
+12$180$1$캐비닛숫자맞추기$-$0
+12$2001$1$연필분해$Remove_InventoryItem&Get_InventoryItem&Add_Condition$2&101&22
+12$2005$1$나머지 반 설계도 나옴$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$9&101&102&24
+12$2007$1$완벽설계도$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$1&102&103&26
+12$200$1$엔드게임진실루트 엔딩 1$End_Game$0
+12$202$1$진실루트1에서얻은열쇠로 멸망막는 설계도 얻음$Get_InventoryItem&Add_Condition$105&35
+12$210$1$멸망을막는 설계도 3분의2완성$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$105&200&110&37
+12$220$1$멸망막는 설계도 완벽해결$Remove_InventoryItem&Remove_InventoryItem&Get_InventoryItem&Add_Condition$103&110&120&39
+12$230$1$엔드게임 멸망막음 엔딩2$-$0
+12$240$1$멸망을 막을수 있는 기계장치 설계도 3분의1 얻음$Get_InventoryItem$105
+12$150$1$기계팔 전선빼기 미니게임$-$0
+12$152$1$전기 존나튐$-$0
+12$9997$1$다른 아이템을 사용해보자$-$0
+12$9998$1$조합이 실패한것같아요$-$0
+12$9999$1$분해를 실패한것 같아요$-$0
